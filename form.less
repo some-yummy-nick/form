@@ -1,0 +1,43 @@
+.error {
+    border-color: orange;
+}
+
+.error-message {
+    color: orange;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.form__block{
+    margin-bottom: 20px;
+}
+
+.modal{
+    position: absolute;
+    left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    pointer-events: none;
+    opacity: 0;
+}
+.modal.active{
+
+    animation: success 4s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes success {
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        opacity: 0;
+        transform: scale(0);
+    }
+}
